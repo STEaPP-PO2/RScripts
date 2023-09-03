@@ -1,0 +1,7 @@
+install.packages("wbstats")
+library("wbstats")
+str(wb_cachelist, max.level = 1)
+new_cache <- wb_cache()
+internet_stat <- wb_search("internet")
+print(internet_stat)
+print(n = 121 , internet_stat)
